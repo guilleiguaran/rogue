@@ -58,4 +58,4 @@ Run rackup using rogue:
 
 ## Copyright
 
-Copyright (c) 2012-2014 Guillermo Iguaran. See LICENSE for further details.
+Copyright (c) 2014 Guillermo Iguaran. See LICENSE for further details.
