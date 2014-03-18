@@ -2,6 +2,8 @@
 
 _Minimal HTTP server for Rack applications powered by the superpowers of others_
 
+![Rogue by Marvel Comics](http://img1.wikia.nocookie.net/__cb20110918173744/doblaje/es/images/7/75/Rogue2.gif)
+
 ## Description
 
 Rogue is a minimal and fast HTTP 1.1 server for Rack applications.
