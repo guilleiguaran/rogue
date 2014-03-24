@@ -44,7 +44,7 @@ module Rogue
           "REQUEST_URI"     => @parser.request_url,
           "REQUEST_PATH"    => uri.path,
           "QUERY_STRING"    => uri.query || "",
-          "FRAGMENT"        => uri.fragment,
+          "FRAGMENT"        => uri.fragment || "",
           "PATH_INFO"       => uri.path,
           "SERVER_NAME"     => server.host,
           "SERVER_PORT"     => server.port.to_s,

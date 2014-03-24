@@ -18,7 +18,7 @@ describe Rogue::Request do
     @request.env["REQUEST_URI"].must_equal "/"
     @request.env["REQUEST_PATH"].must_equal "/"
     @request.env["QUERY_STRING"].must_be_empty
-    @request.env["FRAGMENT"].must_be_nil
+    @request.env["FRAGMENT"].must_be_empty
   end
 
   it "should support fragment in uri" do
