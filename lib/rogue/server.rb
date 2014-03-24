@@ -44,8 +44,11 @@ module Rogue
       @running = false
 
       EventMachine.stop_server(@signature)
-    
+
       unless wait_for_connections_and_stop
+        Signal.trap("INT")  { EventMachine.stop }
+        Signal.trap("TERM") { EventMachine.stop }
+        puts "Waiting for connection(s) to finish..."
         EventMachine.add_periodic_timer(1) { wait_for_connections_and_stop }
       end
     end
@@ -57,7 +60,6 @@ module Rogue
         EventMachine.stop
         true
       else
-        puts "Waiting for connection(s) to finish..."
         false
       end
     end
